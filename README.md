@@ -1,9 +1,9 @@
 # MH-SVM
 
+Official repository for [MHS-VM: Multi-Head Scanning in Parallel Subspaces for Vision Mamba](https://arxiv.org/pdf/2406.05992).
 
 
-
-Code release delayed due to scheduling conflicts. Updates coming soon. Thank you for your attention!
+> Updates coming soon. Thank you for your attention!
 
 
 
