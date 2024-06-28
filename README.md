@@ -1,7 +1,7 @@
 This is the official code repository for [MHS-VM](https://arxiv.org/pdf/2406.05992).
 
 <div align="center">
-<h1> [MHS-VM] </h1>
+<h1> MHS-VM </h1>
 <h3> Multi-Head Scanning in Parallel Subspaces for Vision Mamba </h3>
 (https://arxiv.org/pdf/2406.05992)
 </div>
@@ -9,6 +9,8 @@ This is the official code repository for [MHS-VM](https://arxiv.org/pdf/2406.059
 ### Release
 
 - **News**: `2024/6/30`: MHS Module and MHS-VM released.
+
+### Introduction
 
 ![module](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-1.png)
 
