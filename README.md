@@ -8,7 +8,7 @@ This is the official code repository for [MHS-VM](https://arxiv.org/pdf/2406.059
 
 ### Release
 
-- **News**: `2024/6/30`: MHS Module and MHS-VM released.
+- **News**: `2024/07/05`: MHS Module and MHS-VM released.
 
 ### Introduction
 
