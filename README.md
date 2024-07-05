@@ -55,6 +55,28 @@ cd MHS-VM
 python train.py
 ```
 
+## Test
+
+```python
+cd MHS-VM
+python test.py --h 4 --d isic2018 --p best_4h.pth
+```
+
+```python
+miou: 0.8085252327081669, f1_or_dsc: 0.8941265712919525
+```
+
+An interesting observation is that the model, which was trained using the dataset isic2018, might yield notably high performance when evaluated against the test set of the dataset isic2017.
+
+```python
+cd MHS-VM
+python test.py --h 4 --d isic2017 --p best_4h.pth
+```
+
+```python
+miou: 0.8201665691022297, f1_or_dsc: 0.9011994649553033
+```
+
 ## Citation
 
 If you find this repository useful, please cite our work: 
