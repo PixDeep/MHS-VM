@@ -22,7 +22,7 @@ A richer array of scan patterns is introduced to capture the diverse visual patt
 ![Scan Patterns](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-2.png)
 
 A Scan Route Attention (SRA) mechanism is introduced to enable the model to attenuate or screen out trivial
-features, thereby enhancing its ability to capture complex structures in images
+features, thereby enhancing its ability to capture complex structures in images.
 
 ![Embedding Section Fusion](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-5.png)
 
