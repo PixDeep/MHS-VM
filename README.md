@@ -12,12 +12,17 @@ This is the official code repository for [MHS-VM](https://arxiv.org/pdf/2406.059
 
 ### Introduction
 
+A Multi-Head Scan (MHS) mechanism is introduced to enhance visual representation learning.
+
+
 ![module](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-1.png)
 
-
+A richer array of scan patterns is introduced to capture the diverse visual patterns present in vision data.
 
 ![Scan Patterns](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-2.png)
 
+A Scan Route Attention (SRA) mechanism is introduced to enable the model to attenuate or screen out trivial
+features, thereby enhancing its ability to capture complex structures in images
 
 ![Embedding Section Fusion](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-5.png)
 
@@ -25,7 +30,7 @@ In our experiments, we examine the CV for the relative deviations of the $k$ val
 
 $$
 \begin{equation}
-z_3 = (\sum_{i=1}^{k} y_i) \odot \sigma(y_{cv})
+z = (\sum_{i=1}^{k} y_i) \odot \sigma(y_{cv})
 \end{equation}
 $$
 
