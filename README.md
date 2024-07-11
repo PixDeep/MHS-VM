@@ -29,11 +29,11 @@ z_3 = (\sum_{i=1}^{k} y_i) \odot \sigma(y_{cv})
 \end{equation}
 $$
 
-where $y_{cv} = \operatorname{std}([y_i]) / \operatorname{avg}([y_i-\operatorname{min}([y_i])])$ represents the relative CV, and $\odot$ denotes the element-wise product between tensors, and $\sigma(x)$ is a monotone function, such as Sigmoid, ReLU, power function and exponential function $\exp(\cdot)$, etc. This monotone function is introduced to prompt the Mamba block to extract position-aware features. 
+where $y_{cv} = \text{std}([y_i]) / \text{avg}([y_i-\text{min}([y_i])])$ represents the relative CV, and $\odot$ denotes the element-wise product between tensors, and $\sigma(x)$ is a monotone function, such as Sigmoid, ReLU, power function and exponential function $\exp(\cdot)$, etc. This monotone function is introduced to prompt the Mamba block to extract position-aware features. 
 
 $$
 \begin{equation}\label{eqn:cvscaling}
-\sigma(x, t) = \operatorname{ReLU}(x-t) = \operatorname{max}(0, x-t)
+\sigma(x, t) = \texte{ReLU}(x-t) = \text{max}(0, x-t)
 \end{equation}
 $$
 
