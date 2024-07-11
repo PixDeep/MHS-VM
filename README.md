@@ -14,9 +14,30 @@ This is the official code repository for [MHS-VM](https://arxiv.org/pdf/2406.059
 
 ![module](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-1.png)
 
-![Embedding Section Fusion](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-5.png)
+
 
 ![Scan Patterns](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-2.png)
+
+
+![Embedding Section Fusion](https://github.com/PixDeep/MHS-VM/blob/main/assets/Figure-5.png)
+
+In our experiments, we examine the CV for the relative deviations of the $k$ values, providing insights into the variability and consistency of the embeddings' responses along different scan routes. We facilitate the module's ability to selectively filter or attenuate information through the incorporation of a multiplicative gating mechanism based on the relative CV. This process is formulated as:
+
+$$
+\begin{equation}
+z_3 = (\sum_{i=1}^{k} y_i) \odot \sigma(y_{cv})
+\end{equation}
+$$
+
+where $y_{cv} = \operatorname{std}([y_i]) / \operatorname{avg}([y_i-\operatorname{min}([y_i])])$ represents the relative CV, and $\odot$ denotes the element-wise product between tensors, and $\sigma(x)$ is a monotone function, such as Sigmoid, ReLU, power function and exponential function $\exp(\cdot)$, etc. This monotone function is introduced to prompt the Mamba block to extract position-aware features. 
+
+$$
+\begin{equation}\label{eqn:cvscaling}
+\sigma(x, t) = \operatorname{ReLU}(x-t) = \operatorname{max}(0, x-t)
+\end{equation}
+$$
+
+This function returns $0$ when $x < t$ and $x-t$ otherwise. The parameter $t$ can be set as a hyperparameter or a learnable parameter. Such a strategy can be considered as a novel regularization technique to prevent over-fitting and improve generalization. 
 
 ## Main Environments
 
