@@ -33,7 +33,7 @@ where $y_{cv} = \text{std}([y_i]) / \text{avg}([y_i-\text{min}([y_i])])$ represe
 
 $$
 \begin{equation}\label{eqn:cvscaling}
-\sigma(x, t) = \texte{ReLU}(x-t) = \text{max}(0, x-t)
+\sigma(x, t) = \text{ReLU}(x-t) = \text{max}(0, x-t)
 \end{equation}
 $$
 
