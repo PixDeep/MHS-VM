@@ -83,7 +83,6 @@ def calc_posarrays(H, W, Depth=4):
     return dict_list
 
 
-
 def main(h, w, d=4):
     print('H = {}, W = {}, Depth = {}'.format(h, w, d))
     route_dict = calc_posarrays(H=h, W=w, Depth=d)
