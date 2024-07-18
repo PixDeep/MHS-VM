@@ -2,6 +2,7 @@ import torch
 from einops import rearrange
 
 
+
 # cw: clockwise; ccw: anticlockwise 
 def diag_scan(h, w, cw=True):
     
