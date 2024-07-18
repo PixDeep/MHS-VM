@@ -10,7 +10,6 @@ import random
 import logging
 import logging.handlers
 from matplotlib import pyplot as plt
-
 from scipy.ndimage import zoom
 import SimpleITK as sitk
 from medpy import metric
