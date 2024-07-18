@@ -4,11 +4,9 @@ import timm
 from datasets.dataset import NPY_datasets
 from tensorboardX import SummaryWriter
 from models.vmunet.vmunet import VMUNet
-
 from engine import *
 import os
 import sys
-
 from utils import *
 from configs.config_setting import setting_config
 
