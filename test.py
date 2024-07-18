@@ -78,7 +78,7 @@ def main(config, h=4, d='isic2018', p='best_4h.pth'):
         config,
     )
 
-# python test.py --h 4 --d 'isic2018' --p 'best_4h.pth'    
+  
 if __name__ == "__main__":
     
     config = setting_config
