@@ -32,7 +32,6 @@ class setting_config:
 
     criterion = BceDiceLoss(wb=1, wd=1)
 
-    pretrained_path = './pre_trained/'
     num_classes = 1
     input_size_h = 256
     input_size_w = 256
