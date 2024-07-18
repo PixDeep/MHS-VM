@@ -5,7 +5,6 @@ from torch.cuda.amp import autocast as autocast
 from sklearn.metrics import confusion_matrix
 from utils import save_imgs
 
-
 def train_one_epoch(train_loader,
                     model,
                     criterion, 
@@ -48,7 +47,6 @@ def train_one_epoch(train_loader,
             logger.info(log_info)
     scheduler.step() 
     return step
-
 
 def val_one_epoch(test_loader,
                     model,
@@ -103,7 +101,6 @@ def val_one_epoch(test_loader,
         logger.info(log_info)
     
     return np.mean(loss_list)
-
 
 def test_one_epoch(test_loader,
                     model,
